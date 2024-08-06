@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#home {
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.left {
+    height: 100vh;
+    width: 18%;
+    float: left;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 0px 5px rgba(43, 43, 43, 0.452);
+    /* background-color: green; */
+}
+
+.left .bottom {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+    height: 40px;
+}
+
+/* Track (the area on which the thumb rests) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #adaaaa;
+    /* Color of the thumb */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #83808068;
+    /* Darker color when hovered */
+}
+
+.left .bottom li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    color: white;
+    background-color: rgb(56, 126, 35);
+    padding-left: 12px;
+    height: 50px;
+}
+
+.left .bottom li i {
+    color: white;
+    padding: 0px 7px;
+}
+
+strong {
+    display: block;
+    padding: 20px 6px;
+    background-color: rgb(56, 126, 35);
+    ;
+    color: white;
+}
+
+.left .bottom li:hover {
+    background-color: rgba(244, 161, 7, 0.986);
+    /* box-shadow: 0 0 6px rgba(255, 255, 255, 0.5); */
+    font-weight: bolder;
+    /* font-size: 30px; */
+}
+
+.left .bottom li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 545;
+    color: white;
+    cursor: pointer;
+}
+
+.left .top {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 25px;
+}
+
+.left .top img {
+    height: 60px;
+    width: 60px;
+}
+
+.left .top h2 {
+    margin-top: 10px;
+    font-weight: 800;
+    color: rgb(56, 126, 35);
+    text-align: center;
+}
+
+.right {
+    background-color: white;
+    height: 100vh;
+    float: right;
+    width: 82%;
+}
+
+.right .top {
+    position: relative;
+    width: 100%;
+    height: 17%;
+    /* background-image: url(photos/bima-rahmanda-4mPo9OVEg7g-unsplash.jpg); */
+    background-repeat: no-repeat;
+    background-position: center calc(-195px);
+    background-size: cover;
+}
+
+.right .top .navbar {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(56, 126, 35);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.right .top .navbar li {
+    padding: 10px 30px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.right .top .navbar li a:hover {
+    color: rgb(238, 255, 0);
+}
+
+.right .top .navbar .prof {
+    border-radius: 100%;
+    height: 40px;
+}
+
+.right .top .navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    /* font-weight: 585; */
+    color: white;
+}
+
+.right .bottom {
+    display: flex;
+    flex-direction: column
+}
+
+.right .bottom #boxes {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    padding: 20px;
+    color: white;
+}
+
+.right .bottom #boxes .box {
+    height: 160px;
+    width: 380px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.icons{
+    height: 40px;
+    width: 40px;
+}
+
+.right .bottom #formstudent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    margin: 30px 0px;
+    padding: 15px;
+    /* background-color: rgb(250, 250, 110); */
+    background-color: rgb(179, 214, 167,0.7);
+    background-image: url(photos/Examhall.jpg);
+    background-blend-mode: lighten;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right .bottom #formteacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    margin: 30px 0px;
+    padding: 15px;
+    /* background-color: rgb(250, 250, 110); */
+    background-color: rgb(179, 214, 167,0.7);
+    background-image: url(photos/pexels-pixabay-159844.jpg);
+    background-blend-mode: lighten;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    height: 500px;
+    width: 95%;
+    /* border: 2px solid black; */
+    margin: 5px;
+}
+
+input .btn{
+    height: 20px;
+    width: 30px;
+    padding: 10px;
+}
+
+#combine {
+    background-color: white;
+    border-radius: 10px;
+    height: 450px;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+}
+
+#formstudent h1 {
+    color: rgb(56, 126, 35);
+    text-align: center;
+}
+
+.right .bottom #formstudent .formele {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 15px 0px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.right .bottom #formstudent  input {
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.right .bottom #formstudent .formele label {
+    margin: 4px 0px;
+}
+
+.right .bottom #formteacher .formele {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 15px 0px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.right .bottom #formteacher .formele input {
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.right .bottom #formteacher .formele label {
+    margin: 4px 0px;
+}
+
+#Submit {
+    position: absolute;
+    left: 40%;
+    bottom: 5%;
+    height: 30px;
+    width: 87px;
+    padding: 4px;
+    background-color: rgb(225, 163, 49);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.right .bottom #about {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    color: rgb(56, 126, 35);
+    padding: 24px 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.right .bottom #about h1 {
+    color: rgb(56, 126, 35);
+}
+
+.right .bottom #aboutinfo {
+    height: 100%;
+    width: 100%;
+    padding: 25px 20px;
+    display: flex;
+    color: rgb(56, 126, 35);
+    font-size: large;
+}
+
+.right .bottom #aboutinfo iframe {
+    height: 200px;
+    width: 450px;
+    margin-left: 60px;
+    border-radius: 2px;
+}
+
+#feedback{
+    height: 750px;
+    width: 100vw;
+    background-color: rgb(61, 60, 60);
+
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.40) 120%) #5b5959; */
+}
+
+#forms{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    position: relative;
+    left: 17%;
+    top: 4%;
+    color: white;
+   
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 6px;
+    width: 600px;
+}
+
+.form_group input{
+    height: 35px;
+    border-radius: 6px;
+}
